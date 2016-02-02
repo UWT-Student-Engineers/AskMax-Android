@@ -5,9 +5,10 @@
     android:layout_height="match_parent"
     tools:context="edu.uw.askmax.MainActivity">
 
+    <!-- Displays text! See res/values/strings.xml for explanation of @string/hello_world -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/hello_world" />
 
 </RelativeLayout>
