@@ -11,4 +11,18 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
+    <WebView
+        android:id="@+id/main_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/main_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/search_bg"
+        android:elevation="4dp"/>
+
 </RelativeLayout>
