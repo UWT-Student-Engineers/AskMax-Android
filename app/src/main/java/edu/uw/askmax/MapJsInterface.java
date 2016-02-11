@@ -5,9 +5,10 @@ import android.webkit.JavascriptInterface;
 import android.widget.Toast;
 
 /**
- * Created by andre on 2/4/2016.
+ * Methods that we expose to JavaScript.
  */
 public class MapJsInterface {
+
     private Context context;
 
     public MapJsInterface(Context context) {
