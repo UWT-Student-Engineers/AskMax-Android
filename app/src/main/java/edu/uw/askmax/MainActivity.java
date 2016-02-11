@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         // Set the mapView to load html map
         mapView.loadUrl("file:///android_asset/common/html/map.html");
         mapView.getSettings().setJavaScriptEnabled(true);
-        mapView.addJavascriptInterface(new MapJsInterface(this), "Android");
+        mapView.addJavascriptInterface(new MapJsInterface(this), "AskMaxAndroid");
 
         mapView.setWebViewClient(new WebViewClient() {
             @Override
