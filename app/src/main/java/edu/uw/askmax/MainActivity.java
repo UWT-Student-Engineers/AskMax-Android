@@ -1,15 +1,16 @@
 package edu.uw.askmax;
 
 import android.annotation.SuppressLint;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
+import android.webkit.ValueCallback;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 import java.util.HashMap;
 import java.util.Map;
-
+import java.lang.StringBuilder;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -21,14 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Bind(R.id.main_map) WebView mapView;
     @Bind(R.id.main_search) SearchView searchView;
-
-    private Map<String, locationData> roomData = new HashMap<>();
-
+    private Map<String, locationData> roomData = new HashMap<String, locationData>();
     @SuppressLint({"SetJavaScriptEnabled", "AddJavascriptInterface"})
     @Override
     protected void onCreate(Bundle state) {
         super.onCreate(state);
-
+        initializeDatabase();
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
@@ -54,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                // Search text changed
                 String targetName = newText.toUpperCase();
-
                 if (roomData.containsKey(targetName)) {
                     locationData targetLocation = roomData.get(targetName);
 
@@ -63,17 +62,21 @@ public class MainActivity extends AppCompatActivity {
                     // in map.js
                     StringBuilder builder = new StringBuilder("javascript:centerCamera(\"");
                     builder.append(targetName);
-                    builder.append("\",\"");
+                    builder.append("\",");
                     builder.append(targetLocation.getLat());
-                    builder.append("\",\"");
+                    builder.append(",");
                     builder.append(targetLocation.getLng());
-                    builder.append("\",\"");
+                    builder.append(",");
 
                     builder.append(targetLocation.getZoomLevel());
-                    builder.append("\")");
+                    builder.append(")");
                     mapView.loadUrl(builder.toString());
-                }
 
+
+
+
+
+                }
                 return true;
             }
         });
