@@ -18,6 +18,10 @@ import java.io.InputStreamReader;
 /**
  * Created by Brandon on 2/16/2016.
  *
+ * This is from the Android tutorial, with some intermediary changes in progress: original 
+ * db is for a 'dictionary' with word/definition key/value pairs.  This obviously needs
+ * to be refactored, some of which I've already done.
+ * 
  * "There are many ways to store your data, such as in an online database, in a local SQLite
  * database, or even in a text file. It is up to you to decide what is the best solution for
  * your application. This lesson shows you how to create a SQLite virtual table that can provide
@@ -143,6 +147,7 @@ public class DatabaseTable {
             }).start();
         }
 
+        //this parser needs adjustment for our usecase 
         private void loadWords() throws IOException {
             final Resources resources = mHelperContext.getResources();
             InputStream inputStream = resources.openRawResource(R.raw.definitions);
@@ -151,7 +156,7 @@ public class DatabaseTable {
             try {
                 String line;
                 while((line = reader.readLine()) != null) {
-                    String[] strings = TextUtils.split(line, "-");
+                    String[] strings = TextUtils.split(line, ",");//changed from '-' to ','
                     if(strings.length < 2) continue;
                     long id = addWord(strings[0].trim(), strings[1].trim());
                     if(id < 0) {
@@ -162,7 +167,8 @@ public class DatabaseTable {
                 reader.close();
             }
         }
-
+        //the parameter count may work (i.e. we may not need more than two), 
+        //but this needs some quick refactoring: name of params, count of params, etc.
         public long addWord(String word, String definition) {
             ContentValues initialValues = new ContentValues();
             initialValues.put(COL_ROOM, word);
