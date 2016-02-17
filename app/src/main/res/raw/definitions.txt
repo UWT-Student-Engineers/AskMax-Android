@@ -1,0 +1,16 @@
+//Erase this line: need to decide on format, but delineation will be by comma (no space) EXAMPLE:
+BB,107
+BB,106
+.
+.
+.
+GWP,101
+GWP,215
+GWP,324
+.
+.
+.
+BHS,102
+
+//ERASE: perhaps this format: 
+ACDM,BB,107,Common/resource/uwtRoomFloorplans/<nameofimage>.gif,Common/resource/photos/<name>.jpeg
