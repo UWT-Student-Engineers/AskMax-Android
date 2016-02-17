@@ -111,7 +111,7 @@ public class DatabaseTable {
             mDatabase = db;
             mDatabase.execSQL(FTS_TABLE_CREATE); //creates the database
 
-            loadDictionary(); //populate the db table just created
+            loadLocations(); //populate the db table just created
         }
 
         @Override
@@ -131,11 +131,11 @@ public class DatabaseTable {
          * Tip: You also might want to set up a callback to notify your UI activity of
          * this thread's completion.
          */
-        private void loadDictionary() {
+        private void loadLocations() {
             new Thread(new Runnable() {
                 public void run() {
                     try {
-                        loadWords();
+                        loadData();
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
@@ -143,7 +143,7 @@ public class DatabaseTable {
             }).start();
         }
 
-        private void loadWords() throws IOException {
+        private void loadData() throws IOException {
             final Resources resources = mHelperContext.getResources();
             InputStream inputStream = resources.openRawResource(R.raw.definitions);
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
@@ -153,7 +153,7 @@ public class DatabaseTable {
                 while((line = reader.readLine()) != null) {
                     String[] strings = TextUtils.split(line, "-");
                     if(strings.length < 2) continue;
-                    long id = addWord(strings[0].trim(), strings[1].trim());
+                    long id = addData(strings[0].trim(), strings[1].trim());
                     if(id < 0) {
                         Log.e(TAG, "unable to add word: " + strings[0].trim());
                     }
@@ -163,7 +163,7 @@ public class DatabaseTable {
             }
         }
 
-        public long addWord(String word, String definition) {
+        public long addData(String word, String definition) {
             ContentValues initialValues = new ContentValues();
             initialValues.put(COL_ROOM, word);
             initialValues.put(COL_BUILDING, definition);
