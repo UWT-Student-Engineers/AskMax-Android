@@ -11,6 +11,7 @@ import edu.uw.askmax.model.Location;
 public interface DatabaseInterface {
 
     List<Location> search(String query);
+    Location get(String building);
     Location get(String building, String room);
     Location add(Location location);
 }
