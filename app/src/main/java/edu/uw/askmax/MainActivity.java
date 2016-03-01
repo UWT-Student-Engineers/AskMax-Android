@@ -12,12 +12,12 @@ import android.widget.EditText;
 
 import com.google.gson.Gson;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import edu.uw.askmax.model.Location;
+import timber.log.Timber;
 
 /**
  * Main screen of the app. It will display and control a layout that includes the map
@@ -55,32 +55,31 @@ public class MainActivity extends AppCompatActivity {
         searchView.addTextChangedListener(new TextChangedWatcher() {
             @Override
             public void onTextChanged(String s) {
-                s = s.toLowerCase();
+                s = normalizeSearch(s);
 
-                if (s.equals("test")) {
-                    Location location = database.get("bb", "test");
+                // centerCamera() takes a list of locations
+                List<Location> list = database.search(s);
 
-                    // centerCamera() takes a list of locations
-                    List<Location> list = new ArrayList<>();
-                    list.add(location);
+                // Convert to a json string
+                Gson gson = new Gson();
+                String json = gson.toJson(list);
 
-                    // Convert to a json string
-                    Gson gson = new Gson();
-                    String json = gson.toJson(list);
+                String js = "centerCamera(" + json + ");";
+                Timber.d("Javascript: %s", js);
 
-                    String js = "centerCamera(" + json + ");";
-                    Log.d("Max", js);
-
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                        mapView.evaluateJavascript(js, new ValueCallback<String>() {
-                            @Override
-                            public void onReceiveValue(String value) {
-                                Log.d("Max", value);
-                            }
-                        });
-                    }
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    mapView.evaluateJavascript(js, new ValueCallback<String>() {
+                        @Override
+                        public void onReceiveValue(String value) {
+                            Log.d("Max", value);
+                        }
+                    });
                 }
             }
         });
+    }
+
+    private String normalizeSearch(String s) {
+        return s.toLowerCase();
     }
 }

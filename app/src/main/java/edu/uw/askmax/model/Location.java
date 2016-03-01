@@ -9,6 +9,7 @@ public class Location {
 
     private String building;
     private String room;
+    private List<String> tags;
     private List<Coordinate> coordinates;
 
     public String getBuilding() {
@@ -16,6 +17,9 @@ public class Location {
     }
     public String getRoom() {
         return room;
+    }
+    public List<String> getTags() {
+        return tags;
     }
     public List<Coordinate> getCoordinates() {
         return coordinates;
