@@ -1,0 +1,17 @@
+{
+  "id": "bhs",
+  "title": "Birmingham Hay & Seed",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "bhs",
+    "birmingham",
+    "hay",
+    "seed"
+  ],
+  "coordinates": [
+    { "lat": 47.245768, "lng": -122.437603 },
+    { "lat": 47.245814, "lng": -122.437128 },
+    { "lat": 47.245620, "lng": -122.437082 },
+    { "lat": 47.245569, "lng": -122.437558 }
+  ]
+}

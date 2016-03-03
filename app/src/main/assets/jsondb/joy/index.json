@@ -1,0 +1,21 @@
+{
+  "id": "joy",
+  "title": "Russell T. Joy",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "joy",
+    "russell",
+    "t"
+  ],
+  "coordinates": [
+    { "lat": 47.246609, "lng": -122.437414 },
+    { "lat": 47.246623, "lng": -122.437243 },
+    { "lat": 47.246074, "lng": -122.437121 },
+    { "lat": 47.246024, "lng": -122.437632 },
+    { "lat": 47.246074, "lng": -122.437732 },
+    { "lat": 47.246486, "lng": -122.437565 },
+    { "lat": 47.246480, "lng": -122.437534 },
+    { "lat": 47.246570, "lng": -122.437499 },
+    { "lat": 47.246561, "lng": -122.437434 }
+  ]
+}
