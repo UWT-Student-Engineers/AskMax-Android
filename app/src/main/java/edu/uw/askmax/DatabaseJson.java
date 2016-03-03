@@ -69,13 +69,17 @@ public class DatabaseJson implements DatabaseInterface {
             return new ArrayList<>(1);
         }
 
-        // Very basic and rough
         Set<Location> results = new HashSet<>();
-        for (String tag : tagMap.keySet()) {
-            if (tag.startsWith(query)) {
-                results.addAll(tagMap.get(tag));
+
+        for (String part: query.split(" ")) {
+            // Very basic and rough
+            for (String tag : tagMap.keySet()) {
+                if (tag.startsWith(part)) {
+                    results.addAll(tagMap.get(tag));
+                }
             }
         }
+
         return new ArrayList<>(results);
     }
 
