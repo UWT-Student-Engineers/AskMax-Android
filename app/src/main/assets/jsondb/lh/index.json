@@ -1,0 +1,16 @@
+{
+  "id": "lh",
+  "title": "Laborers Hall",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "lh",
+    "laborers",
+    "hall"
+  ],
+  "coordinates": [
+    { "lat": 47.24529246, "lng": -122.4403863 },
+    { "lat": 47.24533843, "lng": -122.43992463 },
+    { "lat": 47.24519004, "lng": -122.43989043 },
+    { "lat": 47.24514178, "lng": -122.44035177 }
+  ]
+}

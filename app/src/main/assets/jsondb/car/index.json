@@ -1,0 +1,20 @@
+{
+  "id": "car",
+  "title": "Carlton Center",
+  "description": "Previously Carlton Hotel, named after owner Anton Huth's son.",
+  "tags": [
+    "car",
+    "cc",
+    "carlton",
+    "center"
+  ],
+  "coordinates": [
+    { "lat": 47.2474401, "lng": -122.43860465 },
+    { "lat": 47.24748244, "lng": -122.43816108 },
+    { "lat": 47.24721524, "lng": -122.43827239 },
+    { "lat": 47.24718292, "lng": -122.43854329 }
+  ],
+  "rooms": [
+    "200", "400", "404"
+  ]
+}

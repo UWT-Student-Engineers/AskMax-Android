@@ -1,0 +1,17 @@
+{
+  "id": "mat",
+  "title": "Mattress Factory",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "maf",
+    "mat",
+    "mattress",
+    "factory"
+  ],
+  "coordinates": [
+    { "lat": 47.24384395, "lng": -122.43745163 },
+    { "lat": 47.24385215, "lng": -122.43736781 },
+    { "lat": 47.24311559, "lng": -122.43718006 },
+    { "lat": 47.2430728, "lng": -122.43762799 }
+  ]
+}

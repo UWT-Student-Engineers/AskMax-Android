@@ -1,0 +1,15 @@
+{
+  "id": "sci",
+  "title": "Science",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "sci",
+    "science"
+  ],
+  "coordinates": [
+    { "lat": 47.24568394, "lng": -122.43849602 },
+    { "lat": 47.24561156, "lng": -122.4380967 },
+    { "lat": 47.24521735, "lng": -122.43824825 },
+    { "lat": 47.24523783, "lng": -122.43867807 }
+  ]
+}
