@@ -1,11 +1,12 @@
 {
   "id": "gwp",
-  "building": "gwp",
+  "title": "Garretson Woodruff & Pratt",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
   "tags": [
     "gwp",
     "garretson",
     "woodruff",
-    "prat"
+    "pratt"
   ],
   "coordinates": [
     { "lat": 47.245435, "lng": -122.437485 },

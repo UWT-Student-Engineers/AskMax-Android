@@ -1,5 +1,7 @@
 package edu.uw.askmax.model;
 
+import com.google.gson.Gson;
+
 import java.util.List;
 
 /**
@@ -7,16 +9,26 @@ import java.util.List;
  */
 public class Location {
 
-    private String building;
-    private String room;
+    private static Gson gson;
+
+    public static Location fromJson(String json) {
+        return gson.fromJson(json, Location.class);
+    }
+
+    private String id;
+    private String title;
+    private String description;
     private List<String> tags;
     private List<Coordinate> coordinates;
 
-    public String getBuilding() {
-        return building;
+    public String getId() {
+        return id;
     }
-    public String getRoom() {
-        return room;
+    public String getTitle() {
+        return title;
+    }
+    public String getDescription() {
+        return description;
     }
     public List<String> getTags() {
         return tags;
@@ -25,11 +37,23 @@ public class Location {
         return coordinates;
     }
 
+    public String toJson() {
+        initGson();
+        return gson.toJson(this);
+    }
+
+    private void initGson() {
+        if (gson == null) {
+            gson = new Gson();
+        }
+    }
+
     @Override
     public String toString() {
         return "Location{" +
-                "building='" + building + '\'' +
-                ", room='" + room + '\'' +
+                "title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", tags=" + tags +
                 ", coordinates=" + coordinates +
                 '}';
     }
