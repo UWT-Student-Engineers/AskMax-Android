@@ -1,0 +1,15 @@
+{
+  "id": "pink",
+  "title": "Pinkerton",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "pink",
+    "Pinkerton"
+  ],
+  "coordinates": [
+    { "lat": 47.24673683, "lng": -122.43901301 },
+    { "lat": 47.24675868, "lng": -122.43879441 },
+    { "lat": 47.24655657, "lng": -122.43875116 },
+    { "lat": 47.24653472, "lng": -122.43896909 }
+  ]
+}

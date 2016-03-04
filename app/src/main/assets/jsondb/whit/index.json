@@ -1,0 +1,17 @@
+{
+  "id": "whit",
+  "title": "Whitney",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "whit",
+    "whitney"
+  ],
+  "coordinates": [
+    { "lat": 47.24461009, "lng": -122.44088586 },
+    { "lat": 47.24463376, "lng": -122.44059451 },
+    { "lat": 47.24459552, "lng": -122.44058847 },
+    { "lat": 47.24459917, "lng": -122.44054623 },
+    { "lat": 47.24450084, "lng": -122.44052745 },
+    { "lat": 47.24447398, "lng": -122.44086139 }
+  ]
+}

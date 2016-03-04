@@ -1,0 +1,23 @@
+{
+  "id": "admc",
+  "title": "Academic Building",
+  "description": "The 'Academic Building' is an outdated reference to the GWP, BB, BHS and WCG buildings that are connected by an common interior hallway.",
+  "tags": [
+    "admc",
+    "academic"
+  ],
+  "coordinates": [
+    { "lat": 47.24604128, "lng": -122.43762564 },
+    { "lat": 47.24609226, "lng": -122.43712306 },
+    { "lat": 47.24581823, "lng": -122.43706137 },
+    { "lat": 47.24581914, "lng": -122.43705332 },
+    { "lat": 47.24561702, "lng": -122.43700638 },
+    { "lat": 47.24561475, "lng": -122.43702851 },
+    { "lat": 47.24548865, "lng": -122.43699431 },
+    { "lat": 47.24548911, "lng": -122.43698359 },
+    { "lat": 47.24524375, "lng": -122.43693329 },
+    { "lat": 47.24519368, "lng": -122.43743554 },
+    { "lat": 47.2457677, "lng": -122.43755691 },
+    { "lat": 47.24577225, "lng": -122.43756562 }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hb",
+  "title": "Harmon Brewery",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "hb",
+    "harmon",
+    "brewery",
+    "har"
+  ],
+  "coordinates": [
+    { "lat": 47.24377157, "lng": -122.43716128 },
+    { "lat": 47.24381345, "lng": -122.43668385 },
+    { "lat": 47.24341923, "lng": -122.43659534 },
+    { "lat": 47.24337006, "lng": -122.43707277 }
+  ]
+}

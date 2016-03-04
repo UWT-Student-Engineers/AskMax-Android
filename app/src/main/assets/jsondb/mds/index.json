@@ -1,0 +1,16 @@
+{
+  "id": "mds",
+  "title": "McDonald Smith",
+  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "tags": [
+    "mds",
+    "mcdonald",
+    "smith"
+  ],
+  "coordinates": [
+    { "lat": 47.24395913, "lng": -122.43715458 },
+    { "lat": 47.24400738, "lng": -122.4366758 },
+    { "lat": 47.24381345, "lng": -122.4366302 },
+    { "lat": 47.24377704, "lng": -122.437113 }
+  ]
+}

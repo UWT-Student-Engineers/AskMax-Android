@@ -1,7 +1,7 @@
 {
   "id": "bb",
   "title": "Birmingham Block",
-  "description": "This is a building, blah blah blah. Hahahahahaha.",
+  "description": "Built by William Birmingham in the late 1800s.",
   "tags": [
     "bb",
     "birmingham",
@@ -12,5 +12,8 @@
     { "lat": 47.245617, "lng": -122.437026 },
     { "lat": 47.245478, "lng": -122.436996 },
     { "lat": 47.245426, "lng": -122.437501 }
+  ],
+  "rooms": [
+    "104", "106", "107"
   ]
 }
