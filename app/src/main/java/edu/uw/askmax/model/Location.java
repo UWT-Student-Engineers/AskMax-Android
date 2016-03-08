@@ -12,6 +12,9 @@ public class Location {
     private static Gson gson;
 
     public static Location fromJson(String json) {
+        //added on the fly
+        initGson();
+
         return gson.fromJson(json, Location.class);
     }
 
@@ -42,7 +45,7 @@ public class Location {
         return gson.toJson(this);
     }
 
-    private void initGson() {
+    private static void initGson() {
         if (gson == null) {
             gson = new Gson();
         }
