@@ -1,0 +1,16 @@
+{
+  "id": "male1",
+  "title": "Male First Floor",
+  "description": "Male Bathroom",
+  "url": "",
+  "img": "male1_main",
+  "tags": [
+    "male", "bath", "rest", "room"
+  ],
+  "coordinates": [
+    { "lat": 47.246055, "lng": -122.437432 },
+    { "lat": 47.246063, "lng": -122.437341 },
+    { "lat": 47.246025, "lng": -122.437329 },
+    { "lat": 47.246015, "lng": -122.437420 }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "wcg110",
+  "title": "WCG110",
+  "description": "Classroom",
+  "url": "https://www.tacoma.uw.edu/rooms/aroom/WCG/110",
+  "img": "wcg110_main",
+  "tags": [
+    "110", "wcg110"
+  ],
+  "coordinates": [
+    { "lat": 47.245939, "lng": -122.437324 },
+    { "lat": 47.245955, "lng": -122.437212 },
+    { "lat": 47.245889, "lng": -122.437191 },
+    { "lat": 47.245877, "lng": -122.437307 }
+  ]
+}

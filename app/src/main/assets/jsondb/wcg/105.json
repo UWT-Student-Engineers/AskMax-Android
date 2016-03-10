@@ -1,0 +1,16 @@
+{
+  "id": "wcg105",
+  "title": "WCG105",
+  "description": "West Coast Grocery Convenience Store",
+  "url": "https://www.tacoma.uw.edu/node/39129",
+  "img": "wcg105_main",
+  "tags": [
+    "105", "wcg105"
+  ],
+  "coordinates": [
+    { "lat": 47.245906, "lng": -122.437601 },
+    { "lat": 47.245922, "lng": -122.437460 },
+    { "lat": 47.245875, "lng": -122.437447 },
+    { "lat": 47.245857, "lng": -122.437587 }
+  ]
+}

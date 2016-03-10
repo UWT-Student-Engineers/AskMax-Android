@@ -1,0 +1,16 @@
+{
+  "id": "gwp220",
+  "title": "GWP220",
+  "description": "Classroom",
+  "url": "https://www.tacoma.uw.edu/rooms/aroom/GWP/220",
+  "img": "gwp220_main",
+  "tags": [
+    "220", "gwp220"
+  ],
+  "coordinates": [
+    { "lat": 47.245298, "lng": -122.437166 },
+    { "lat": 47.245314, "lng": -122.437019 },
+    { "lat": 47.245240, "lng": -122.427004 },
+    { "lat": 47.245224, "lng": -122.437150 }
+  ]
+}

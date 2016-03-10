@@ -1,0 +1,16 @@
+{
+  "id": "gwp101",
+  "title": "GWP101",
+  "description": "Classroom",
+  "url": "https://www.tacoma.uw.edu/rooms/aroom/GWP/101",
+  "img": "gwp101_main",
+  "tags": [
+    "101", "gwp101"
+  ],
+  "coordinates": [
+    { "lat": 47.245313, "lng": -122.437490 },
+    { "lat": 47.245325, "lng": -122.437376 },
+    { "lat": 47.245245, "lng": -122.437359 },
+    { "lat": 47.245233, "lng": -122.437472 }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "female1",
+  "title": "Female First Floor",
+  "description": "Female Bathroom",
+  "url": "",
+  "img": "female1_main",
+  "tags": [
+    "female", "rest", "bath", "room"
+  ],
+  "coordinates": [
+    { "lat": 47.246063, "lng": -122.437341 },
+    { "lat": 47.246071, "lng": -122.437257 },
+    { "lat": 47.246037, "lng": -122.437242 },
+    { "lat": 47.246025, "lng": -122.437329 }
+  ]
+}
