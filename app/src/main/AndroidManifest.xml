@@ -18,7 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailsActivity" />
+        <activity android:name=".DetailsActivity"
+                  android:theme="@style/BottomSheet.Light"
+                  android:finishOnCloseSystemDialogs="true"
+                  android:excludeFromRecents="true"
+                  android:documentLaunchMode="never"
+                  android:relinquishTaskIdentity="true" />
     </application>
 
 </manifest>
