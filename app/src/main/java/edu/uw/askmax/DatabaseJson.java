@@ -22,7 +22,7 @@ import edu.uw.askmax.model.Location;
  */
 public class DatabaseJson implements DatabaseInterface {
 
-    private static final String ROOT_DIR = "jsondb";
+    private static final String ROOT_DIR = "common/jsondb";
 
     private AssetManager am;
 

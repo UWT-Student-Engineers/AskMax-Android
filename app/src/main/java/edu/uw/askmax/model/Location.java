@@ -21,6 +21,8 @@ public class Location {
     private String id;
     private String title;
     private String description;
+    private String img;
+    private String url;
     private List<String> tags;
     private List<Coordinate> coordinates;
 
@@ -32,6 +34,12 @@ public class Location {
     }
     public String getDescription() {
         return description;
+    }
+    public String getImg() {
+        return img;
+    }
+    public String getUrl() {
+        return url;
     }
     public List<String> getTags() {
         return tags;
