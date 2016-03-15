@@ -1,0 +1,17 @@
+{
+  "id": "lounge",
+  "title": "Lounge",
+  "description": "Student Lounge",
+  "url": "",
+  "img": "lounge_main",
+  "tags": [
+    "lounge"
+  ],
+  "coordinates": [
+    { "lat": 47.245800, "lng": -122.437145 },
+    { "lat": 47.245813, "lng": -122.437049 },
+    { "lat": 47.245714, "lng": -122.437028 },
+    { "lat": 47.245744, "lng": -122.437114 },
+    { "lat": 47.245784, "lng": -122.437146 }
+  ]
+}

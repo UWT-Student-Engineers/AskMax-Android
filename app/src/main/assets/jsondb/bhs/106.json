@@ -1,0 +1,17 @@
+{
+  "id": "bhs106",
+  "title": "BHS106",
+  "description": "Classroom",
+  "url": "https://www.tacoma.uw.edu/rooms/aroom/BHS/106",
+  "img": "bhs106_main",
+  "tags": [
+    "106", "bhs106"
+  ],
+  "coordinates": [
+    { "lat": 47.245779, "lng": -122.437340 },
+    { "lat": 47.245800, "lng": -122.437145 },
+    { "lat": 47.245784, "lng": -122.437146 },
+    { "lat": 47.245744, "lng": -122.437114 },
+    { "lat": 47.245647, "lng": -122.437273 }
+  ]
+}

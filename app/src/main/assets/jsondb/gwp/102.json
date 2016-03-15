@@ -1,0 +1,16 @@
+{
+  "id": "gwp102",
+  "title": "GWP102",
+  "description": "Academic Advising Center/International Programs/Office of Undergraduate Education",
+  "url": "",
+  "img": "gwp102_main",
+  "tags": [
+    "102", "gwp102"
+  ],
+  "coordinates": [
+    { "lat": 47.245937, "lng": -122.437220 },
+    { "lat": 47.245404, "lng": -122.437141 },
+    { "lat": 47.245347, "lng": -122.437127 },
+    { "lat": 47.245339, "lng": -122.437208 }
+  ]
+}

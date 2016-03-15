@@ -1,0 +1,16 @@
+{
+  "id": "wcg104",
+  "title": "WCG104",
+  "description": "Diversity Resource Center",
+  "url": "http://tacoma.uw.edu/diversity",
+  "img": "wcg104_main",
+  "tags": [
+    "104", "wcg104"
+  ],
+  "coordinates": [
+    { "lat": 47.245861, "lng": -122.437299 },
+    { "lat": 47.245876, "lng": -122.437187 },
+    { "lat": 47.245818, "lng": -122.437172 },
+    { "lat": 47.245805, "lng": -122.437288 }
+  ]
+}

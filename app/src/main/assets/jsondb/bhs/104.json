@@ -1,0 +1,18 @@
+{
+  "id": "bhs104",
+  "title": "BHS104",
+  "description": "Classroom",
+  "url": "https://www.tacoma.uw.edu/rooms/aroom/BHS/104",
+  "img": "bhs104_main",
+  "tags": [
+    "bhs104", "104"
+  ],
+  "coordinates": [
+    { "lat": 47.245647, "lng": -122.437273 },
+    { "lat": 47.245744, "lng": -122.437114 },
+    { "lat": 47.245715, "lng": -122.437044 },
+    { "lat": 47.245614, "lng": -122.437090 },
+    { "lat": 47.245609, "lng": -122.437135 },
+    { "lat": 47.245603, "lng": -122.437183 }
+  ]
+}

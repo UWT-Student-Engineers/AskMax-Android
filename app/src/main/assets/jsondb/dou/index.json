@@ -1,7 +1,9 @@
 {
   "id": "dou",
   "title": "Dougan",
-  "description": "Built by Colonel James Dougan in 1891.",
+  "description": "Built by Colonel James Dougan in 1891.",  "url": "",
+  "url": "https://www.tacoma.uw.edu/campus-map/dougan-dou",
+  "img": "dou_main",
   "tags": [
     "dou",
     "dougan"
